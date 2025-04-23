@@ -1,0 +1,13 @@
+[build]
+command = "pnpm build"
+upload.format = "directory"
+upload.dir = ".next"
+
+[site]
+bucket = ".next"
+
+[env.production]
+NEXT_RUNTIME = "edge"
+
+[env.preview]
+NEXT_RUNTIME = "edge" 
